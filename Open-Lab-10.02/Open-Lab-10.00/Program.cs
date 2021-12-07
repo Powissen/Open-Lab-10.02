@@ -17,6 +17,8 @@ namespace Open_Lab_10._02
             Console.WriteLine(LOTR.ToString());
         }
     }
+    
+    
     public class Book
     {
         private string title;
