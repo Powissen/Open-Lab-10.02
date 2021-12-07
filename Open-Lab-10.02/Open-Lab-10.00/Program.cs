@@ -14,7 +14,7 @@ namespace Open_Lab_10._02
             LOTR.Cathegory();
             LOTR.Author();
             LOTR.ReleaseDate();
-            LOTR.WriteAllVariables();
+            Console.WriteLine(LOTR.ToString());
         }
     }
     public class Book
@@ -32,14 +32,10 @@ namespace Open_Lab_10._02
         public void ReleaseDate() { releaseDate = "ReleaseDate"; }
 
 
-        public void WriteAllVariables()
+        public override string ToString()
         {
-            Console.WriteLine("Title: " + title);
-            Console.WriteLine("Pages: " + pages);
-            Console.WriteLine("Cathegory: " + cathegory);
-            Console.WriteLine("Author: " + author);
-            Console.WriteLine("Release date: " + releaseDate);
-
+            string output = title + pages + cathegory + author + releaseDate;
+            return output;
         }
     }
 }
